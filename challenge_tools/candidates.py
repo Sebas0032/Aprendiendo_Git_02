@@ -51,13 +51,11 @@ def unique_tags(tags):
 
 
 def average_score(scores):
-<<<<<<< HEAD
-    """Devuelve la media aritmética de las puntuaciones."""
-    return sum(scores) / len(scores)
-
-
-=======
+    """Devuelve la media aritmetica de las puntuaciones."""
     if not scores:
         return 0.0
     return sum(scores) / len(scores)
->>>>>>> 2792794c9bfd39086c3b0a691dcb392dc1e8a781
+
+
+
+
