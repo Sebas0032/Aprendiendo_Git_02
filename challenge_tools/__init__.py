@@ -5,5 +5,4 @@ from .candidates import (
     rank_teams,
     unique_tags,
     average_score,
-    verify_python_version
 )

@@ -35,8 +35,4 @@ def average_score(scores):
     """Devuelve la media aritmética de las puntuaciones."""
     return sum(scores) / len(scores)
 
-import sys
 
-def verify_python_version():
-    """Devuelve True cuando Python es 3.10 o mas."""
-    return sys.version_info >= (3, 10)
