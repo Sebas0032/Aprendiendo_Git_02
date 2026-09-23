@@ -27,10 +27,17 @@ def rank_teams(entries):
 
 
 def unique_tags(tags):
-    """Elimina etiquetas repetidas."""
-    return list(set(tags))
+    """Elimina etiquetas repetidas conservando el orden de aparición."""
+    pillau = set()
+    asd = []
+    for i in tags:
+        if i not in pillau:
+            pillau.add(i)
+            asd.append(i)
+    return asd
 
 
 def average_score(scores):
-    """Devuelve la media aritmética de las puntuaciones."""
+    if not scores:
+        return 0.0
     return sum(scores) / len(scores)
